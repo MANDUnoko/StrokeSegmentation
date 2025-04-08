@@ -1,0 +1,11 @@
+DICOM → HU 변환
+
+뇌 실질 마스크 곱해서 skull stripping
+
+HU windowing: clip(-40, 100) 또는 [-80, 120] 등 brain window 사용
+
+정규화: [0, 1] 스케일로 변환
+
+resize: (512, 512)
+
+(선택) 저장: .pt for training
